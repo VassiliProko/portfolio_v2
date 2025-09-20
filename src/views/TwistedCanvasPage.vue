@@ -27,6 +27,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
         </p>
         <div class="flex-col mb-lg">
             <ArrowLink href="https://github.com/VassiliProko/Twisted-Canvas">View Github</ArrowLink>
+            <ArrowLink href="https://www.youtube.com/watch?v=UQ-MXKcePGk">Full YouTube Video Breakdown</ArrowLink>
         </div>
         </div>
         <div class="flex-col gap-md mb-xl">
@@ -51,7 +52,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
     <div class="flex-col px-3xl py-lg gap-lg mt-lg border-bottom">
         <h1>The Goal</h1>
         <p class="paragraph">
-            After completing CS50’s lectures and projects, I set out to build a web application from scratch as my final capstone. As an artist, I was drawn to the idea of creating a browser-based drawing tool. To make it more unique, I added the twist element to add challenges to the drawing experience.
+            After completing CS50’s lectures and project assignments, I set out to build a web application from scratch as my final capstone project. As an artist, I was drawn to the idea of creating a browser-based drawing tool. To make it more unique, I added the twist element to add challenges to the drawing experience.
         </p>
         <div class="flex-col gap-md mb-xl">
             <p class="bold primary-color">Requirements</p>
@@ -63,10 +64,10 @@ import ProjectCard from '@/components/ProjectCard.vue'
     <div class="flex-col px-3xl py-lg gap-lg mt-lg border-bottom">
         <h1>The Process</h1>
         <p class="paragraph">
-            I started by creating wireframes in Figma to define the core layout and tools of the drawing interface. From there, I moved directly into development.
+            I started by creating wireframes in Figma to define the core layout and tools of the drawing interface. Referencing applications like Figma and Procreate to develop a minimalist drawing application. 
         </p>
         <p class="paragraph">
-            I opted for a minimalist dark mode drawing application, taking inspiration from Figma and Procreate. 
+            Since this web app needed to also be mobile responsive, I designed the drawing tools of the app into component buckets which would be aligned to an edge of the viewport, allowing for a cohesive experience across devices, and for simpler development.
         </p>
         <CaseImage src="/assets/images/twisted-canvas/process.jpg"></CaseImage>
         <div class="flex-col gap-md">
@@ -100,9 +101,16 @@ import ProjectCard from '@/components/ProjectCard.vue'
     <div class="flex-col px-3xl py-lg gap-lg mt-lg border-bottom">
         <h1>Results</h1>
         <p class="paragraph">
-            The final product is a responsive web-based drawing tool with interactive filters, available on both desktop and mobile. The project successfully brought together creative interface design and functional web development, using HTML Canvas and Django.
+            Overall this full stack capstone project provided a rewarding product development experience from designing wireframes in Figma to fully implementing the web application's frontend and backend with Python and Javascript. The final product is a responsive web-based drawing tool with interactive filters, working on both desktop and mobile. 
         </p>
-        <ArrowLink href="https://certificates.cs50.io/3f0d0557-28ab-4c47-a3b2-3c36cf5f922c.pdf?size=letter" class="mb-xl">View Course Certificate</ArrowLink>
+        <p class="paragraph">
+            A technical overview of the project’s structure and challenges can be found in the <a class="link" href="https://github.com/VassiliProko/Twisted-Canvas" target="_blank">Github</a> repository. 
+        </p>
+        <div class="flex-col">
+            <ArrowLink href="https://certificates.cs50.io/3f0d0557-28ab-4c47-a3b2-3c36cf5f922c.pdf?size=letter">View Course Certificate</ArrowLink>
+            <ArrowLink href="https://www.youtube.com/watch?v=UQ-MXKcePGk"  class="mb-xl">Full YouTube Video Breakdown</ArrowLink>
+        </div>
+        
     </div>
     <div class="flex-col px-3xl py-lg gap-lg mt-lg mb-xl">
         <h1>Other Projects</h1>

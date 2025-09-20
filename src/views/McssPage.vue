@@ -54,19 +54,26 @@ import ProjectCard from '@/components/ProjectCard.vue';
             The previous website lacked visual hierarchy and clear user guidance. Key information was missing or poorly structured, making it difficult for visitors to understand the purpose of the site or take action.            </p>
         <CaseImage src="/assets/images/mcss/mcss-problem-1.jpg" class="width-50"></CaseImage>
         <CaseImage src="/assets/images/mcss/mcss-problem-2.jpg" class="width-50"></CaseImage>
-        <CaseImage src="/assets/images/mcss/mcss-problem-3.jpg" class="width-50 mb-lg"></CaseImage>
+        <CaseImage src="/assets/images/mcss/mcss-problem-3.jpg" class="width-50 mb-md"></CaseImage>
+        <div class="flex-col gap-sm">
+            <p class="bold primary-color">Redesign Goal</p>
+            <p class="paragraph mb-xl">
+                The primary design goal was to create a clear, user-friendly informational hub for the McGill Chinese Students’ Society that effectively supports the needs of prospective and current members. While society members primarily receive event updates through Instagram, the website functions as a comprehensive resource, providing detailed background, event information, member recruitment details, and other relevant content for those seeking deeper engagement.
+            </p>
+        </div>
     </div>
     <div class="flex-col px-3xl py-lg gap-lg mt-lg border-bottom">
         <h1>Solution</h1>
         <p class="paragraph">
-            I redesigned the website with a focus on clarity, accessibility, and visual hierarchy. The design process started in Figma, where I created high-fidelity mockups to guide development. I then built the site using the Vue.js framework, with Netlify for hosting and Cloudinary for cloud-based image management.
+            High-fidelity mockups made in figma guided the development, where I used the Vue.js framework. Netlify is used for hosting and Cloudinary for cloud-based image management.
         </p>
+        <CaseImage src="/assets/images/mcss/mcss-solution-figma.png" class="width-50 mb-lg"></CaseImage>
         <div class="flex-row flex-col-mobile gap-xl">
             <div class="flex-col gap-lg flex-50">
                 <div class="flex-col gap-sm">
                     <h2>Home Page</h2>
                     <p class="paragraph">
-                        The original homepage featured only a banner carousel with no supporting text or user direction. I redesigned it into a split layout: the left side introduces MCSS with a short description, and call-to-action, while the right side features a carousel to highlight recent events.
+                        The original homepage featured only a banner carousel with no supporting text or user direction. I introduced a split layout on the homepage to balance informational text and visual engagement, enabling users to quickly grasp the site's purpose while seeing active content.
                     </p>
                 </div>
                 <div class="flex-col gap-sm">
@@ -89,7 +96,7 @@ import ProjectCard from '@/components/ProjectCard.vue';
             <div class="flex-col gap-lg flex-50">
                 <h2>Events Page</h2>
                 <p class="paragraph">
-                    The old website displayed past event posters, which made the page feel more like a creative bulletin board than an event archive. I replaced this with a photo gallery to create a stronger sense of energy and connection.
+                    The old website displayed past event posters, which made the page feel more like a creative bulletin board than an event archive. I replaced this with a photo gallery to create a stronger sense of energy and connection, allowing visitors to get a better glimpse of what the events felt like and why they should attend our future events.
                 </p>
             </div>
             <CaseImage src="/assets/images/mcss/mcss-solution-events-old.jpg" tag="Old" class="width-50"></CaseImage>
@@ -98,7 +105,7 @@ import ProjectCard from '@/components/ProjectCard.vue';
 
         <h2>Sponsor Details</h2>
         <p class="paragraph">
-            Details were added to sponsor logo cards to offer more useful information to members.
+            Additional details were incorporated into the sponsor logo cards to provide members with valuable information directly, eliminating the need to look elsewhere.
         </p>
         <CaseImage src="/assets/images/mcss/mcss-solution-sponsors.jpg" class="mb-xl width-50 mb-xl"></CaseImage>
 

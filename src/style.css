@@ -97,6 +97,12 @@ a {
   text-decoration: none;
 }
 
+.link {
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 h1,
 h2,
 p {

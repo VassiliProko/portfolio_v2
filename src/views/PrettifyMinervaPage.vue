@@ -20,7 +20,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
         <div class="flex-col gap-lg flex-50">
         <h1>Overview</h1>
         <p class="paragraph">
-            I undertook a redesign of Minerva, McGill University’s student portal, with the goal of improving its usability and visual clarity. What began as a dashboard-style concept in Figma evolved into a developing a browser extension which applies custom styling and layout improvements directly to the live site. Currently the extension is published on the chrome web store and has over 170 active users.
+            I undertook a redesign of Minerva, McGill University’s student portal, with the goal of improving its usability and visual clarity. What began as a dashboard-style concept in Figma evolved into a developing a browser extension which applies custom styling and layout improvements directly to the live site. Currently the extension is published on the chrome web store and has over 200 active users.
         </p>
         <div class="flex-col mb-lg">
             <ArrowLink href="https://chromewebstore.google.com/detail/gligldkmadhkgfbomifkomimankgljji?utm_source=item-share-cb">Chrome Web Store</ArrowLink>
@@ -104,7 +104,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
         <div class="flex-col gap-md">
             <h2>Nav Bar</h2>
             <p class="paragraph">
-                I began by redesigning the top navigation bar. Using JavaScript, I selected and rearranged HTML elements, added new components, and replaced the outdated layout with a cleaner, more intuitive version.
+                The top navigation bar redesign focused on improving clarity and visual balance. By thoughtfully rearranging the elements and increasing padding and font sizes, I achieved a more harmonious and spacious layout. These refinements also reduced the vertical footprint of the navigation bar, maximizing the available space for the site’s main content.
             </p>
         </div>
         <CaseImage src="/assets/images/prettify-minerva/browser-solution-navbar.jpg" class="mb-lg"></CaseImage>
@@ -112,7 +112,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
             <div class="flex-col gap-md flex-50">
                 <h2>CSS Styling</h2>
                 <p class="paragraph">
-                    Changing the CSS styling was the quickest and best way to bring life to the site, applying site wide changes like changing the font to Inter, changing heading and table styling, and more.
+                    Implementing site-wide CSS styling changes was the most efficient method to refresh the visual identity of the webpage. I selected the font "Inter" for its modern, clean, and highly readable qualities, and altered heading and table styles for a consistent information hierarchy. These design decisions collectively contribute to a more user friendly interface.
                 </p>
             </div>
             <CaseImage src="/assets/images/prettify-minerva/vs-code-ss.jpg" class="width-50"></CaseImage>
@@ -121,10 +121,10 @@ import ProjectCard from '@/components/ProjectCard.vue'
             <div class="flex-col gap-md flex-50">
                 <h2>Quick Links</h2>
                 <p class="paragraph">
-                    From personal experience, I found the main menu which displayed the links from the nav bar but with descriptions to be not very useful. I wanted to improve this by adding a quick links sidebar on the right side of the main page, giving users an easy way to save and access their frequently visited Minerva pages.
+                    To bring more value to the extension, I added a quick links side bar attached to the right side on each page allowing users to save their frequently visited pages there. A button to save the current page to quick links is also placed in the top right corner of each page. 
                 </p>
                 <p class="paragraph">
-                    A button to save the current page to quick links is placed in the top right corner of each page.
+                    Importantly, these features don’t take up too much screen estate and doesn’t impact the appearance or usage of the sites content.
                 </p>
             </div>
             <CaseImage src="/assets/images/prettify-minerva/browser-solution-quick-links.jpg" class="width-50"></CaseImage>
@@ -133,10 +133,10 @@ import ProjectCard from '@/components/ProjectCard.vue'
             <div class="flex-col gap-md flex-50">
                 <h2>Other Changes</h2>
                 <p class="paragraph">
-                    The only page which I heavily redesigned was the login page. I wanted to keep the extension lightweight and avoid changing the layout of the content in pages, since most users are already familiar with Minerva’s layout. 
+                    I simplified the login page, as the Minerva’s login page was very information dense providing minimal value to the regular user. I also added a cool picture of the university :)
                 </p>
                 <p class="paragraph mb-md">
-                    Inspired by the Made by McGill campaign font, I also designed a simple logo for the extension.
+                    Inspired by the Made by McGill campaign font, I designed a minimalist logo for the extension that remains clear and legible even at the small sizes used in the browser’s extension tab.
                 </p>
                 <CaseImage src="/assets/images/prettify-minerva/browser-solution-logo.jpg" class="width-50"></CaseImage>
             </div>
@@ -164,7 +164,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
         <div class="flex-col gap-md mb-xl">
             <p class="bold primary-color">Key Outcome</p>
             <p class="paragraph">
-                Shipped the Prettify Minerva Chrome extension on the Chrome Web Store, attracting over 170 active users
+                Shipped the Prettify Minerva Chrome extension on the <a class="link" href="https://chromewebstore.google.com/detail/gligldkmadhkgfbomifkomimankgljji?utm_source=item-share-cb" target="_blank">Chrome Web Store</a>, attracting over 200 active users
             </p>
         </div>
     </div>
