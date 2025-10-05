@@ -1,14 +1,32 @@
 <script setup>
-import ProjectCard from '@/components/ProjectCard.vue'
+import ProjectCard from '@/components/ProjectCard.vue';
+import { onMounted } from 'vue';
 
+onMounted(() => {
+    const canvas = document.getElementById('rive-canvas');
+    const riveInstance = new rive.Rive({
+        src: '/assets/landing-graphic.riv', // Rive File
+        canvas: canvas,
+        autoplay: true,
+        stateMachines: 'Default', // if using a state machine
+        onLoad: () => {
+        riveInstance.resizeDrawingSurfaceToCanvas();
+        }
+    });
+});
 </script>
+
 
 <template>
     <div class="flex-col height-100 border-bottom gap-md">
+        <div style="position: absolute; width: 100%;">
+            <canvas id="rive-canvas" width="800" height="1000" class="landing-graphic fade-in-up"></canvas>
+        </div>
+        
         <div class="landing-text flex-row flex-wrap px-xl mt-md fade-in-up">
             Hello, I’m Vassili Prokopenko, a <span class="bold primary-color">product designer</span>, studying business analytics at McGill University. 
         </div>
-        <div class="flex-row flex-col-mobile gap-md px-xl mt-auto mb-lg">
+        <div class="flex-row flex-col-mobile gap-md px-xl mt-auto mb-lg z-100">
             <div class="flex-row gap-sm muted border-200 br-sm padding-sm w-fit">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
                 <p class="bold">Based in the Washington D.C. area</p>
@@ -89,6 +107,20 @@ import ProjectCard from '@/components/ProjectCard.vue'
 </template>
 
 <style scoped>
+.landing-graphic {
+    max-height: calc(100vh - var(--navbar-margin));
+    max-width: 100vw;
+    transform: translateY(-1rem);
+    right: 0;
+    position: absolute;
+    scale: 90%;
+}
+
+.z-100 {
+    z-index: 100;
+}
+
+
 #about, #work {
     position: inherit;
     transform: translateY(calc(-1 * var(--navbar-margin)));
