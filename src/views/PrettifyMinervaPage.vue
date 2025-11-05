@@ -108,7 +108,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
             </p>
         </div>
         <CaseImage src="/assets/images/prettify-minerva/browser-solution-navbar.jpg" class="mb-lg"></CaseImage>
-        <div class="flex-row gap-lg mb-lg">
+        <div class="flex-row flex-col-mobile gap-lg mb-lg">
             <div class="flex-col gap-md flex-50">
                 <h2>CSS Styling</h2>
                 <p class="paragraph">
@@ -117,7 +117,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
             </div>
             <CaseImage src="/assets/images/prettify-minerva/vs-code-ss.jpg" class="width-50"></CaseImage>
         </div>
-        <div class="flex-row gap-lg mb-lg">
+        <div class="flex-row flex-col-mobile gap-lg mb-lg">
             <div class="flex-col gap-md flex-50">
                 <h2>Quick Links</h2>
                 <p class="paragraph">
@@ -129,7 +129,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
             </div>
             <CaseImage src="/assets/images/prettify-minerva/browser-solution-quick-links.jpg" class="width-50"></CaseImage>
         </div>
-        <div class="flex-row gap-lg mb-lg">
+        <div class="flex-row flex-col-mobile gap-lg mb-lg">
             <div class="flex-col gap-md flex-50">
                 <h2>Other Changes</h2>
                 <p class="paragraph">
