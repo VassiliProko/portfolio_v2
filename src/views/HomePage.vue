@@ -22,10 +22,13 @@ onMounted(() => {
         <div style="position: absolute; width: 100%;">
             <canvas id="rive-canvas" width="800" height="1000" class="landing-graphic fade-in-up"></canvas>
         </div>
-        
-        <div class="landing-text flex-row flex-wrap px-xl mt-md fade-in-up">
-            Hello, I’m Vassili Prokopenko, a <span class="bold primary-color">product designer</span>, studying business analytics at McGill University. 
+        <div class="flex-col gap-md fade-in-up px-xl mt-md">
+            <div class="landing-text flex-row flex-wrap">
+                Hello, I’m Vassili Prokopenko and I’m passionate about creating experiences that can <span class="bold primary-color">improve people's lives</span>. 
+            </div>
+            <p class="landing-subtext">Currently a student @ McGill University</p>
         </div>
+        
         <div class="flex-row flex-col-mobile gap-md px-xl mt-auto mb-lg z-100">
             <div class="flex-row gap-sm muted border-200 br-sm padding-sm w-fit">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
@@ -109,7 +112,7 @@ onMounted(() => {
 <style scoped>
 .landing-graphic {
     max-height: calc(100vh - var(--navbar-margin));
-    max-width: 100vw;
+    max-width: 80vw;
     transform: translateY(-1rem);
     right: 0;
     position: absolute;
@@ -145,6 +148,11 @@ onMounted(() => {
     max-width: 80%;
     box-sizing: border-box;
     display: inline-block;
+}
+
+.landing-subtext {
+    font-size: var(--font-size-lg);
+    color: var(--neutral-color-600);
 }
 
 .resume-btn {
