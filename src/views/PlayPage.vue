@@ -1,21 +1,28 @@
 <script setup>
-import CaseImage from '@/components/CaseCoverImage.vue'
+import Image from '@/components/ImageCard.vue'
 </script>
 
 <template>
   <div class="flex-col px-3xl py-lg gap-md">
     <h1>Play</h1>
-    <p>Illustrations and other creative work.</p>
+    <p>Some of my favorite illustrations!</p>
   </div>
   <div class="flex-row px-3xl py-lg gap-md">
     <div class="flex-col gap-md flex-50">
-      <CaseImage src="/assets/images/play/shrimp-card.jpeg"></CaseImage>
-      <CaseImage src="/assets/images/play/lunar-new-year-party.jpeg"></CaseImage>
+      <Image
+        src="/assets/images/play/shrimp-card.jpeg"
+        description="McGill East Asian Student Society's Membership Card"
+      ></Image>
+      <Image src="/assets/images/play/reze-csm.JPG" description="Reze Fanart (Chainsawman)"></Image>
+      <Image
+        src="/assets/images/play/lunar-new-year-party.jpeg"
+        description="MCSS - Lunar New Year Party Poster"
+      ></Image>
     </div>
     <div class="flex-col gap-md flex-50">
-      <CaseImage src="/assets/images/play/wet-reef.jpeg"></CaseImage>
-      <CaseImage src="/assets/images/play/north-pole.jpeg"></CaseImage>
-      <CaseImage src="/assets/images/play/terminator.jpeg"></CaseImage>
+      <Image src="/assets/images/play/wet-reef.jpeg" description="A Vibrant Coral Reef"></Image>
+      <Image src="/assets/images/play/north-pole.jpeg" description="Chilly North Pole"></Image>
+      <Image src="/assets/images/play/terminator.jpeg" description="Terminator on Fire"></Image>
     </div>
   </div>
 </template>

@@ -9,7 +9,7 @@
 <template>
     <nav>
         <div class="nav-wrapper flex-row align-center bold">
-            <a href="/" class="flex-row align-center gap-sm">
+            <a href="/" class="flex-row align-center gap-sm home-link">
                 <img src="/assets/images/duck-pfp.jpeg" alt="profile picture" class="navbar-pfp"></img>
                 Vassili Prokopenko
             </a>
@@ -20,7 +20,7 @@
                     </li>
                 </ul>
             </div>
-            <ThemeBtn />
+            <ThemeBtn style="margin-right: var(--spacing-sm);"/>
         </div>
     </nav>
 </template>
@@ -36,16 +36,22 @@ ul {
     list-style: none;
 }
 
+.home-link {
+    transition: color 0.2s ease;
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+}
+
 li a {
     padding: var(--spacing-sm);
+    width: 100%;
+    display: block;
+    border-radius: var(--border-radius-sm);
 }
 
-a {
-    transition: color 0.2s ease;
+li a:hover, .home-link:hover {
+    background-color: var(--neutral-color-800);
 }
 
-a:hover {
-    color: var(--neutral-color-400);
-}
 
 </style>

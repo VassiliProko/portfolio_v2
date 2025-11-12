@@ -27,12 +27,12 @@
 <template>
     <nav>
         <div class="nav-wrapper flex-row flex-wrap align-center bold">
-            <a href="/" class="flex-row align-center gap-md">
+            <a href="/" class="flex-row align-center gap-md nav-link">
                 <img src="/assets/images/duck-pfp.jpeg" alt="profile picture" class="navbar-pfp"></img>
                 Vassili Prokopenko
             </a>
             <ThemeBtn />
-            <div class="hamburger align-center flex-row ml-md" @click="toggleMenu">
+            <div class="hamburger align-center flex-row ml-sm nav-link" @click="toggleMenu">
                 <svg v-if="!isMenuOpen" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
                 <svg v-if="isMenuOpen" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
             </div>
@@ -65,9 +65,14 @@ ul {
     padding: 0;
     list-style: none;
     width: 100%;
-    margin-left: 38px;
-    margin-top: var(--spacing-md);
+    margin-top: var(--spacing-sm);
     margin-bottom: var(--spacing-sm);
+}
+
+.nav-link {
+    transition: color 0.2s ease;
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
 }
 
 li a {
@@ -77,29 +82,13 @@ li a {
     border-radius: var(--border-radius-sm);
 }
 
-li a:hover {
+li a:hover, .nav-link:hover {
     background-color: var(--neutral-color-800);
-}
-
-a {
-    transition: color 0.2s ease;
-}
-
-a:hover {
-    color: var(--neutral-color-400);
 }
 
 .hamburger {
     color: var(--neutral-color-50);
     cursor: pointer;
-}
-
-svg {
-    transition: color 0.2s ease;
-}
-
-svg:hover {
-    color: var(--neutral-color-400)
 }
 
 </style>

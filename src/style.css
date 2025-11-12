@@ -202,6 +202,10 @@ img {
   margin-left: auto;
 }
 
+.ml-sm {
+  margin-left: var(--spacing-sm);
+}
+
 .ml-md {
   margin-left: var(--spacing-md);
 }
@@ -345,7 +349,7 @@ nav {
 
 .nav-wrapper {
   background-color: var(--neutral-color-900);
-  padding: 12px;
+  padding: 8px;
   font-size: var(--font-size-lg);
   border-radius: var(--border-radius-md);
   width: 100%;
