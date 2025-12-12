@@ -88,10 +88,10 @@ onMounted(() => {
         <div class="flex-col gap-md padding-md border-200 br-md">
             <h2>Background</h2>
             <p>
-                I'm a designer with roots in traditional art, in 2020, I discovered digital art and began creating illustrations and graphics for both personal projects and school organizations, developing a versatile creative skill set.
+                I’m a designer with roots in traditional art. In 2020, I discovered digital art and began creating illustrations and graphics for personal projects and student organizations, building a versatile creative skill set.
             </p>
             <p>
-                These days, I have been designing digital interfaces with Figma and bringing them to life with code. As a business analytics major at McGill, I also love exploring data to drive analytical and human centered design decisions. Outside of design and school, you’ll usually find me training calisthenics.
+                These days, I design digital interfaces in Figma and bring some of them to life with code. Currently, I'm a student at McGill, majoring in Business Analytics, learning how to use data to effectively drive solutions. Outside of design and school, you’ll usually find me training calisthenics.
             </p>
             <div class="flex-col gap-sm">
                 <p class="bold">Education</p>
