@@ -1,4 +1,6 @@
 <script setup>
+import AboutCard from '@/components/AboutCard.vue';
+import LifetimeCounter from '@/components/LifetimeCounter.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
 import { onMounted } from 'vue';
 
@@ -81,29 +83,84 @@ onMounted(() => {
         <h1 class="mb-lg mt-md">About</h1>
     </div>
     <div class="flex-row flex-col-mobile px-xl py-lg gap-lg mb-2xl">
-        <div class="flex-col padding-md border-200 br-md flex-30 gap-md">
+        <div class="flex-col padding-md border-200 br-md flex-30 gap-md h-fit">
             <img src="/assets/images/index/portrait.jpg" class="about-portrait"></img>
-            <a href="https://docs.google.com/document/d/1W0-QIjajoPcEnDEO99qnTczTWo3l3Wu7W1VPZ29Igfw/preview?" class="mb-lg resume-btn bold" target="_blank">Resume</a>
-        </div>
-        <div class="flex-col gap-md padding-md border-200 br-md">
-            <h2>Background</h2>
-            <p>
-                I’m a designer with roots in traditional art. In 2020, I discovered digital art and began creating illustrations and graphics for personal projects and student organizations, building a versatile creative skill set.
-            </p>
-            <p>
-                These days, I design digital interfaces in Figma and bring some of them to life with code. Currently, I'm a student at McGill, majoring in Business Analytics, learning how to use data to effectively drive solutions. Outside of design and school, you’ll usually find me training calisthenics.
-            </p>
-            <div class="flex-col gap-sm">
-                <p class="bold">Education</p>
-                <div class="flex-row gap-sm">
-                    <img src="/assets/images/index/mcgill-bird-icon.jpg" class="about-education-icon"></img>
-                    <p>McGill University <span class="muted">/ B.Comm Business Analytics</span></p>
-                    <p class="ml-auto">Aug 2024 - Apr 2027</p>
+            <div class="flex-row flex-wrap gap-md mb-md">
+                <a href="https://docs.google.com/document/d/1W0-QIjajoPcEnDEO99qnTczTWo3l3Wu7W1VPZ29Igfw/preview?" class="resume-btn bold" target="_blank">Resume</a>
+                <div class="flex-row gap-sm align-center padding-sm border-200 br-sm w-fit">
+                    <video 
+                        src="/assets/gifs/Flashing_Circle_Icon.webm" 
+                        autoplay 
+                        loop 
+                        muted 
+                        playsinline 
+                        width="20" 
+                        height="20"
+                    ></video>
+                    <LifetimeCounter ></LifetimeCounter>
                 </div>
             </div>
-            <div class="flex-col gap-sm">
-                <p class="bold">Skills</p>
-                <p>Figma, Adobe Suite, Vue.js, Javascript, HTML, CSS</p>
+        </div>
+        <div class="flex-col gap-lg">
+            <div class="flex-col gap-md padding-md border-200 br-md">
+                <h2>Background</h2>
+                <p>I’m an ambitious multidisciplinary designer passionate about crafting experiences that can improve people’s lives. I have 5+ years of digital design experience, from creating graphics for my high school newspaper to designing digital products currently in university. </p>
+                <p>
+                   Recently, I've designed and developed interactive web projects using frontend technologies and AI. I'm also studying business analytics at McGill University, learning how to leverage data to drive effective solutions.
+                </p>
+                <p>
+                    Outside of design and school, you’ll usually find me training calisthenics.
+                </p>
+                <!-- <div class="flex-col gap-sm">
+                    <p class="bold">Education</p>
+                    <div class="flex-row gap-sm">
+                        <img src="/assets/images/index/mcgill-bird-icon.jpg" class="about-education-icon"></img>
+                        <p>McGill University <span class="muted">/ B.Comm Business Analytics</span></p>
+                        <p class="ml-auto">Aug 2024 - Apr 2027</p>
+                    </div>
+                </div> -->
+                <div class="flex-col gap-sm">
+                    <p class="bold">Skills</p>
+                    <p>Figma, Rive, Adobe Suite, Vue.js, Javascript, HTML, CSS</p>
+                </div>
+            </div>
+
+            <div class="flex-col gap-md padding-md border-200 br-md">
+                <h2>Education</h2>
+                <AboutCard
+                    image="/assets/images/index/mcgill-icon.jpeg"
+                    title="McGill University"
+                    description="Bachelor of Commerce, Major in Business Analytics | GPA: 3.78/4.0"
+                    period="Aug 2024 - Apr 2027"
+                />
+                <AboutCard
+                    image="/assets/images/index/hkust-icon.jpeg"
+                    title="Hong Kong University of Science and Technology"
+                    description="Exchange Program"
+                    period="Sep 2025 - May 2026"
+                />
+            </div>
+
+            <div class="flex-col gap-md padding-md border-200 br-md">
+                <h2>Experience</h2>
+                <AboutCard
+                    image="/assets/images/index/usthing-icon.jpeg"
+                    title="USThing"
+                    description="UI/UX Designer"
+                    period="Oct 2025 - Present"
+                />
+                <AboutCard
+                    image="/assets/images/index/mcss-icon.jpeg"
+                    title="McGill Chinese Students' Society"
+                    description="Web Developer & Graphic Designer"
+                    period="Oct 2024 - Present"
+                />
+                <AboutCard
+                    image="/assets/images/index/lyft-icon.jpeg"
+                    title="Lyft"
+                    description="UX Research Intern | McGill Micro-Exp Program"
+                    period="May 2025"
+                />
             </div>
         </div>
     </div>
@@ -127,12 +184,6 @@ onMounted(() => {
 #about, #work {
     position: inherit;
     transform: translateY(calc(-1 * var(--navbar-margin)));
-}
-
-.about-education-icon {
-    width: 24px;
-    height: 24px;
-    border-radius: 3px;
 }
 
 .about-portrait {
@@ -173,6 +224,9 @@ onMounted(() => {
 @media (max-width: 768px) {
     .landing-text {
         max-width: 100%;
+    }
+    #rive-canvas {
+        display: none;
     }
 }
 </style>

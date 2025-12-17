@@ -7,7 +7,7 @@ import Image from '@/components/ImageCard.vue'
     <h1>Play</h1>
     <p>Some of my favorite illustrations!</p>
   </div>
-  <div class="flex-row px-3xl py-lg gap-md">
+  <div class="flex-row flex-col-mobile px-3xl py-lg gap-md">
     <div class="flex-col gap-md flex-50">
       <Image
         src="/assets/images/play/shrimp-card.jpeg"

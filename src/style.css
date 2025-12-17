@@ -22,6 +22,7 @@
   --gradient-primary: linear-gradient(oklch(98.5% 0 0) 0%, var(--primary-color) 100%);
 
   --font-family-primary: 'Satoshi', sans-serif;
+  --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.25rem;
   --font-size-xl: 2.25rem;
@@ -125,6 +126,10 @@ p {
   font-weight: 400;
 }
 
+.small-text {
+  font-size: var(--font-size-sm);
+}
+
 .paragraph {
   max-width: 60ch;
 }
@@ -174,6 +179,10 @@ img {
 
 .w-fit {
   width: fit-content;
+}
+
+.h-fit {
+  height: fit-content;
 }
 
 .align-center {
