@@ -8,7 +8,7 @@ import Image from '@/components/ImageCard.vue'
     <p>Some of my favorite illustrations!</p>
   </div>
   <div class="flex-row flex-col-mobile px-3xl py-lg gap-md">
-    <div class="flex-col gap-md flex-50">
+    <div class="flex-col gap-md flex-50 mb-2xl">
       <Image
         src="/assets/images/play/shrimp-card.jpeg"
         description="McGill East Asian Student Society's Membership Card"

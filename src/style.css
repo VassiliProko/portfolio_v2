@@ -397,6 +397,10 @@ ul {
   margin: 0;
 }
 
+.z-100 {
+  z-index: 100;
+}
+
 /* project card image */
 .pc-image-wrapper {
   display: flex;
