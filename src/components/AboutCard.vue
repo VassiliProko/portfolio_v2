@@ -26,6 +26,6 @@ export default {
 .about-card-icon {
   width: 48px;
   height: 48px;
-  border-radius: var(--border-radius-sm);
+  border-radius: var(--border-radius-xs);
 }
 </style>

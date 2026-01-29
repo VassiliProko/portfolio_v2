@@ -66,6 +66,13 @@ export default {
   overflow: hidden;
   cursor: pointer;
   max-height: 70vh;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    height: auto;
+  }
 }
 
 .project-card img {

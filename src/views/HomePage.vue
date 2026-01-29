@@ -139,6 +139,12 @@ onMounted(() => {
                     description="Exchange Program"
                     period="Sep 2025 - May 2026"
                 />
+                <AboutCard
+                    image="/assets/images/index/studio-school-icon.jpeg"
+                    title="Studio School"
+                    description="10 Week Human Centered Design x AI Bootcamp"
+                    period="Feb 2026 - Apr 2026"
+                />
             </div>
 
             <div class="flex-col gap-md padding-md border-200 br-md">
@@ -154,6 +160,12 @@ onMounted(() => {
                     title="McGill Chinese Students' Society"
                     description="Web Developer & Graphic Designer"
                     period="Oct 2024 - Present"
+                />
+                <AboutCard
+                    image="/assets/images/index/mus-icon.jpeg"
+                    title="McGill Management Undergraduate Society"
+                    description="Web Designer"
+                    period="Jan 2026 - Feb 2026"
                 />
                 <AboutCard
                     image="/assets/images/index/lyft-icon.jpeg"
