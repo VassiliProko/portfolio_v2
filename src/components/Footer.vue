@@ -8,7 +8,7 @@ import ArrowLink from './ArrowLink.vue'
     <div class="flex-row footer-main">
       <div class="flex-col padding-md br-md gap-md h-fit footer-connect">
         Connect with me
-        <a href="https://www.linkedin.com/in/vassili-prokopenko/">
+        <a href="https://www.linkedin.com/in/vassili-prokopenko/" target="_blank">
           <div class="flex-col padding-sm br-sm connect-btn linkedin-btn">
             <div class="flex-row gap-3xl z-100">
               <div class="flex-col bold">Linkedin</div>
