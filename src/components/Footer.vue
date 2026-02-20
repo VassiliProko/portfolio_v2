@@ -90,6 +90,11 @@ footer {
 .footer-main {
   padding: var(--spacing-xl) var(--spacing-3xl);
   background-color: var(--neutral-color-950);
+  background-image: url('/assets/images/footer-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .footer-connect {
