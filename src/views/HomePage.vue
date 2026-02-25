@@ -121,7 +121,8 @@ onMounted(() => {
                 </div> -->
                 <div class="flex-col gap-sm">
                     <p class="bold">Skills</p>
-                    <p>Figma, Rive, Adobe Suite, Vue.js, Javascript, HTML, CSS</p>
+                    <p>Design: Figma, Rive, Adobe (Photoshop, Illustrator, After Effects), Procreate</p>
+                    <p>Development: Next.js, Vue.js, JavaScript, HTML/CSS, Cursor, Git, AI-Assisted Development</p>
                 </div>
             </div>
 
